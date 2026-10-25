@@ -33,6 +33,8 @@ Les vrais noms de villes sont remplacés par des anagrammes. Les joueurs les rec
   **La règle :** si on voit le visage des élèves, la caméra est devant, à la place du maître. On voit
   alors le mur du fond, et les fenêtres sont à gauche de l'image. Le tableau et le damier ne sont
   visibles que dans le dos des élèves.
+  **Les élèves restent assis face au tableau.** Pour regarder un camarade, ils tournent la tête, pas
+  le corps : depuis le maître, personne ne tourne le dos à la caméra.
 - **Le club de Wattresol :** une salle municipale, des tables alignées avec damiers et pendules, une
   cafetière, les coupes sur une étagère, une banderole « Club de dames de Wattresol ».
 - **La cuisine des Vermeulen :** la table en formica où se jouent les duels entre frères.

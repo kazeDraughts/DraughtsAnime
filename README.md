@@ -21,7 +21,7 @@ inspiré de l'histoire vraie d'un joueur du Nord de la France.
 | [episodes/](episodes/) | Les scénarios découpés plan par plan (le pilote : épisode 1) |
 | [visuels/concepts/](visuels/concepts/) | Les premières images de style |
 | [visuels/positions/](visuels/positions/) | Les diagrammes exacts des positions (PNG + GIF animé) |
-| [outils/](outils/) | Le moteur de règles, le dessin des positions et le montage des animatiques |
+| [outils/](outils/) | Le moteur de règles, le dessin des positions, le montage des animatiques ; `outils/plans/` : les corrections propres à un plan |
 
 ## Les outils de damier
 
@@ -39,7 +39,8 @@ pas.
 
 ## L'animatique
 
-Il faut aussi `ffmpeg`.
+Il faut aussi `ffmpeg`. Les corrections de `outils/plans/` utilisent en plus NumPy et OpenCV
+(`pip install numpy opencv-python-headless`).
 
 ```bash
 python3 outils/animatique.py episodes/s01e01-test-voix.json   # → montages/s01e01-test-voix.mp4

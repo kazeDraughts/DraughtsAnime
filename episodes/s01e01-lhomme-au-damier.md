@@ -65,14 +65,14 @@ Animatique complète (images, sous-titres, voix déjà enregistrées) :
 | 3 | [p03-ennui.jpg](../visuels/s01e01/p03-ennui.jpg) | IA, références Léo + classe |
 | 4 | [p04-porte.jpg](../visuels/s01e01/p04-porte.jpg) | IA, références Armand + classe |
 | 5 | [p05a-baillement.jpg](../visuels/s01e01/p05a-baillement.jpg), [p05b-lunettes.jpg](../visuels/s01e01/p05b-lunettes.jpg) | IA |
-| 6 | [p06-mains.jpg](../visuels/s01e01/p06-mains.jpg) | IA, régénérée puis recadrée (des pions étaient sur des cases claires) |
+| 6 | [p06-mains.jpg](../visuels/s01e01/p06-mains.jpg) | Main et pion de l'IA (détourés) sur un **damier redessiné au motif exact** : [outils/plans/s01e01_p06.py](../outils/plans/s01e01_p06.py) |
 | 7 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
 | 8 | [p08a-eleves.jpg](../visuels/s01e01/p08a-eleves.jpg) | IA, refaite : caméra à la place du maître, mur du fond derrière les élèves |
 | 8 | [p08b-horloge.jpg](../visuels/s01e01/p08b-horloge.jpg) | IA, pancarte en japonais effacée |
 | 9 | [p09-oeil.jpg](../visuels/s01e01/p09-oeil.jpg) | IA |
 | 10 | [p10-damier-mental.jpg](../visuels/s01e01/p10-damier-mental.jpg) | IA (plan d'ambiance) |
 | 11 | [p11-sueur.jpg](../visuels/s01e01/p11-sueur.jpg) | IA |
-| 12-13 | [p12-main-levee.jpg](../visuels/s01e01/p12-main-levee.jpg) | IA, refaite : par-dessus l'épaule d'Armand, les élèves se retournent vers Léo ; image figée sépia-rouge au montage |
+| 12-13 | [p12-main-levee.jpg](../visuels/s01e01/p12-main-levee.jpg) | IA, refaite deux fois : depuis le bureau d'Armand, tous les élèves assis face au maître tournent la tête vers Léo ; image figée sépia-rouge au montage |
 | 14 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
 
 Les images brutes de l'IA sont gardées dans [visuels/s01e01/brut/](../visuels/s01e01/brut/).

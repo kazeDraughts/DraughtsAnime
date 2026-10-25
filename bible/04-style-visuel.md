@@ -109,10 +109,19 @@ l'autre.
   [03-monde-et-dames.md](03-monde-et-dames.md).
 - Une pancarte en japonais sur le mur (plan de l'horloge) : effacée.
 - Des pions sur les cases claires (plan des mains) : plan régénéré en plus serré puis recadré.
+- **Motif de damier faux, repéré par l'auteur** (plan des mains) : la case foncée sous le pion touchait
+  d'autres cases foncées par les côtés. On a gardé la main et le pion de l'IA (détourés) et redessiné
+  le damier dessous par programme ([outils/plans/s01e01_p06.py](../outils/plans/s01e01_p06.py)).
+- **Élèves dans le mauvais sens, repéré par l'auteur** (plan 12, deuxième version) : des élèves du
+  premier rang tournaient le dos au maître pour regarder Léo. Plan refait : tout le monde reste assis
+  face au maître et tourne seulement la tête.
 
 **Leçons :**
 - Plus un damier est grand et lisible à l'image, plus il faut l'incruster par programme. Les gros
   plans sur une seule case passent mieux.
+- **La règle du damier, à vérifier sur chaque image :** une case foncée n'a que des cases claires sur
+  ses quatre côtés ; les cases foncées ne se touchent que par les coins ; les pions ne sont que sur
+  les cases foncées. Dès qu'un damier est net à l'image, on le redessine par programme.
 - **Une image de référence de décor transmet aussi son arrière-plan.** Quand la caméra change de
   sens (contrechamp), ne pas la donner : décrire le mur qu'on doit voir, et préciser où est la
   caméra (« à la place du maître », « par-dessus l'épaule d'Armand »).
