@@ -18,7 +18,7 @@ inspiré de l'histoire vraie d'un joueur du Nord de la France.
 | [saisons/saison-1.md](saisons/saison-1.md) | Les 36 épisodes de la saison 1 |
 | [saisons/saisons-2-et-3.md](saisons/saisons-2-et-3.md) | Les grandes lignes des saisons 2 et 3 |
 | [matiere-premiere/anecdotes.md](matiere-premiere/anecdotes.md) | Les souvenirs réels et l'épisode où chacun est utilisé |
-| [episodes/](episodes/) | Les scénarios découpés plan par plan (le pilote : épisode 1) |
+| [episodes/](episodes/) | Les scénarios découpés plan par plan (épisode 1 = le pilote, épisode 2 en brouillon) |
 | [visuels/concepts/](visuels/concepts/) | Les premières images de style |
 | [visuels/positions/](visuels/positions/) | Les diagrammes exacts des positions (PNG + GIF animé) |
 | [visuels/personnages/](visuels/personnages/), [visuels/decors/](visuels/decors/) | Personnages détourés et décors réutilisables (ciel étoilé) |
@@ -74,6 +74,7 @@ est public. Elles restent sur la machine.
 - [x] Visuels de référence de Léo, Armand et la classe (utilisés pour le pilote)
 - [x] Pilote : les 12 images de l'épisode 1, corrigées, et l'animatique complète (1 min 25)
 - [ ] Pilote : enregistrer les 10 répliques manquantes, musique, montage final
+- [x] Épisode 2 : découpage et répliques (brouillon), pour enregistrer les épisodes 1 et 2 ensemble
 - [ ] Production par lots de 5 épisodes
 
 ## Dédicace
