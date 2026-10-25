@@ -3,7 +3,7 @@
   "plans": [
     {"image": "visuels/s01e01/p01-clac.jpg", "duree": 5, "personnage": "NARRATEUR · à enregistrer",
      "sous_titre": "Dans une petite ville du Nord,\nun garçon de 10 ans s'ennuyait ferme…", "zoom": 0.0012},
-    {"image": "visuels/concepts/0-affiche.jpg", "duree": 4, "sous_titre": "Épisode 1\nL'homme au damier", "zoom": 0.0004},
+    {"image": "visuels/s01e01/p02-titre.jpg", "duree": 4, "sous_titre": "Épisode 1\nL'homme au damier", "hauteur_texte": 0.25, "zoom": 0.0004},
     {"image": "visuels/s01e01/p03-ennui.jpg", "duree": 7, "personnage": "LÉO (dans sa tête) · à enregistrer",
      "sous_titre": "Lundi. Dictée. Calcul.\nEt ensuite…", "zoom": 0.0005},
     {"image": "visuels/s01e01/p04-porte.jpg", "duree": 6.5, "personnage": "MADAME DELCOURT · à enregistrer",
@@ -20,7 +20,7 @@
     {"image": "visuels/s01e01/p08b-horloge.jpg", "duree": 3, "tictac": 0.16, "zoom": 0.0004},
     {"image": "visuels/s01e01/p09-oeil.jpg", "duree": 6, "personnage": "LÉO (dans sa tête) · à enregistrer",
      "sous_titre": "Pff, c'est facile, il suffit de…\nNon. Si je pousse là, il me prend…", "tictac": 0.16, "zoom": 0.0016},
-    {"image": "visuels/s01e01/p10-damier-mental.jpg", "duree": 6, "personnage": "LÉO · à enregistrer",
+    {"video": "visuels/s01e01/p10-damier-mental.mp4", "duree": 6, "personnage": "LÉO · à enregistrer",
      "sous_titre": "Il… il le donne ?!", "zoom": 0.0012},
     {"image": "visuels/s01e01/p11-sueur.jpg", "duree": 5, "personnage": "LÉO (dans sa tête) · à enregistrer",
      "sous_titre": "Pourquoi il le donnerait…\nà moins que…", "tictac": 0.22, "zoom": 0.0014},
@@ -31,7 +31,7 @@
     {"image": "visuels/s01e01/p12-main-levee.jpg", "effet": "fige", "titre": "À SUIVRE…", "accord": true, "duree": 3},
     {"image": "visuels/positions/s01e01/plateau.png", "fond": "0x1B2A4A", "duree": 5,
      "personnage": "NARRATEUR · à enregistrer", "sous_titre": "Qu'a vu le petit Léo ?\nPourquoi donner un pion pour gagner ?", "zoom": 0.0004},
-    {"image": "visuels/concepts/0-affiche.jpg", "duree": 5, "personnage": "NARRATEUR · à enregistrer",
+    {"image": "visuels/s01e01/p02-titre.jpg", "duree": 5, "hauteur_texte": 0.25, "personnage": "NARRATEUR · à enregistrer",
      "sous_titre": "Ne manquez pas le prochain épisode :\nLes pions qui bougent tout seuls !", "zoom": 0.0004},
     {"image": "visuels/positions/s01e01/plateau.png", "fond": "0x1B2A4A", "duree": 4,
      "sous_titre": "Et toi, tu as trouvé ?\nRéponds en commentaire !", "zoom": 0.0003}

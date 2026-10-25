@@ -61,18 +61,18 @@ Animatique complète (images, sous-titres, voix déjà enregistrées) :
 | Plan | Image | Origine |
 |---|---|---|
 | 1 | [p01-clac.jpg](../visuels/s01e01/p01-clac.jpg) | IA |
-| 2 | [0-affiche.jpg](../visuels/concepts/0-affiche.jpg) + titre | IA |
+| 2 | [p02-titre.jpg](../visuels/s01e01/p02-titre.jpg) | Ciel et logo de l'affiche (IA) + **damier exact en position de départ** ([outils/damier_mental.py](../outils/damier_mental.py)) + Léo détouré |
 | 3 | [p03-ennui.jpg](../visuels/s01e01/p03-ennui.jpg) | IA, références Léo + classe |
-| 4 | [p04-porte.jpg](../visuels/s01e01/p04-porte.jpg) | IA, références Armand + classe |
+| 4 | [p04-porte.jpg](../visuels/s01e01/p04-porte.jpg) | IA ; le damier porté sous le bras (faux) est remplacé par son dos en bois : [outils/plans/s01e01_p04.py](../outils/plans/s01e01_p04.py) |
 | 5 | [p05a-baillement.jpg](../visuels/s01e01/p05a-baillement.jpg), [p05b-lunettes.jpg](../visuels/s01e01/p05b-lunettes.jpg) | IA |
 | 6 | [p06-mains.jpg](../visuels/s01e01/p06-mains.jpg) | Main et pion de l'IA (détourés) sur un **damier redessiné au motif exact** : [outils/plans/s01e01_p06.py](../outils/plans/s01e01_p06.py) |
 | 7 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
 | 8 | [p08a-eleves.jpg](../visuels/s01e01/p08a-eleves.jpg) | IA, refaite : caméra à la place du maître, mur du fond derrière les élèves |
 | 8 | [p08b-horloge.jpg](../visuels/s01e01/p08b-horloge.jpg) | IA, pancarte en japonais effacée |
 | 9 | [p09-oeil.jpg](../visuels/s01e01/p09-oeil.jpg) | IA |
-| 10 | [p10-damier-mental.jpg](../visuels/s01e01/p10-damier-mental.jpg) | IA (plan d'ambiance) |
+| 10 | [p10-damier-mental.mp4](../visuels/s01e01/p10-damier-mental.mp4) | **Animation exacte** : 33-28 puis 32x23, avec Léo détouré et un ciel peint ([outils/damier_mental.py](../outils/damier_mental.py)) |
 | 11 | [p11-sueur.jpg](../visuels/s01e01/p11-sueur.jpg) | IA |
 | 12-13 | [p12-main-levee.jpg](../visuels/s01e01/p12-main-levee.jpg) | IA, refaite deux fois : depuis le bureau d'Armand, tous les élèves assis face au maître tournent la tête vers Léo ; image figée sépia-rouge au montage |
-| 14 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
+| 14 | [plateau.png](../visuels/positions/s01e01/plateau.png), puis [p02-titre.jpg](../visuels/s01e01/p02-titre.jpg) | **Programme (exact)** |
 
 Les images brutes de l'IA sont gardées dans [visuels/s01e01/brut/](../visuels/s01e01/brut/).

@@ -21,6 +21,7 @@ inspiré de l'histoire vraie d'un joueur du Nord de la France.
 | [episodes/](episodes/) | Les scénarios découpés plan par plan (le pilote : épisode 1) |
 | [visuels/concepts/](visuels/concepts/) | Les premières images de style |
 | [visuels/positions/](visuels/positions/) | Les diagrammes exacts des positions (PNG + GIF animé) |
+| [visuels/personnages/](visuels/personnages/), [visuels/decors/](visuels/decors/) | Personnages détourés et décors réutilisables (ciel étoilé) |
 | [outils/](outils/) | Le moteur de règles, le dessin des positions, le montage des animatiques ; `outils/plans/` : les corrections propres à un plan |
 
 ## Les outils de damier
@@ -31,6 +32,7 @@ Il faut Python 3 et Pillow (`pip install pillow`).
 cd outils
 python3 positions.py        # vérifie toutes les positions du catalogue
 python3 dessiner.py s01e01  # dessine une position et sa solution
+python3 damier_mental.py    # rend les plans du damier mental (images et animations)
 ```
 
 Pour ajouter une position, il suffit d'écrire son FEN et sa solution dans `outils/positions.py`. Le

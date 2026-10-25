@@ -1,6 +1,7 @@
 """Monte une animatique verticale (1080x1920) à partir d'une liste de plans décrite en JSON.
 
-Chaque plan : une image fixe (zoom lent ou image figée virée sépia-rouge), une réplique
+Chaque plan : une image fixe (zoom lent ou image figée virée sépia-rouge) ou un clip animé
+(clé « video »), une réplique
 facultative, un sous-titre, et des bruitages (tic-tac, accord du « À suivre »).
 
 Usage : python3 outils/animatique.py episodes/s01e01-test-voix.json
@@ -51,7 +52,8 @@ def _taille_ajustee(texte: str, taille: int, marge: int = 70) -> int:
 
 
 def plan(p: dict, n: int, tmp: Path) -> Path:
-    image = RACINE / p["image"]
+    video = RACINE / p["video"] if p.get("video") else None
+    image = RACINE / p["image"] if not video else None
     avant, apres = p.get("avant", 0.3), p.get("apres", 0.4)
     voix = RACINE / p["voix"] if p.get("voix") else None
     total = avant + (duree(voix) if voix else 0) + apres if voix else p["duree"]
@@ -64,23 +66,28 @@ def plan(p: dict, n: int, tmp: Path) -> Path:
         # Un diagramme sur fond uni : assez petit pour qu'aucun zoom ne rogne ses bords.
         filtres = [f"scale={int(LARGEUR * 2 * 0.84)}:-1",
                    f"pad={LARGEUR * 2}:{HAUTEUR * 2}:(ow-iw)/2:(oh-ih)/2-200:color={p['fond']}"]
-    if p.get("effet") == "fige":
+    if video:
+        # Un clip animé (le damier mental) : on garde son mouvement et on fige sa dernière image.
+        filtres = [f"scale={LARGEUR}:{HAUTEUR}:force_original_aspect_ratio=increase",
+                   f"crop={LARGEUR}:{HAUTEUR}", f"tpad=stop_mode=clone:stop_duration={total}", f"fps={IPS}"]
+    elif p.get("effet") == "fige":
         filtres += [f"scale={LARGEUR}:{HAUTEUR}", SEPIA_ROUGE, "noise=alls=12:allf=t"]
     else:
         vitesse = p.get("zoom", 0.0007)
         plafond = 1.04 if p.get("fond") else 1.15
         filtres += [f"zoompan=z='min(zoom+{vitesse},{plafond})':d={images}:x='iw/2-(iw/zoom/2)'"
                     f":y='ih/2-(ih/zoom/2)':s={LARGEUR}x{HAUTEUR}:fps={IPS}"]
+    hauteur_texte = p.get("hauteur_texte", 0.80)  # position verticale des sous-titres (fraction)
     if p.get("sous_titre"):
         fichier = _texte(tmp, f"st{n}.txt", p["sous_titre"])
         corps = _taille_ajustee(p["sous_titre"], 56)
         filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=white:fontsize={corps}"
-                       f":borderw=5:bordercolor=black:x=(w-tw)/2:y=h*0.80:line_spacing=12:text_align=C")
+                       f":borderw=5:bordercolor=black:x=(w-tw)/2:y=h*{hauteur_texte}:line_spacing=12:text_align=C")
     if p.get("personnage"):
         fichier = _texte(tmp, f"pers{n}.txt", p["personnage"])
         corps = _taille_ajustee(p["personnage"], 40)
         filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=0xFFD23F:fontsize={corps}"
-                       f":borderw=4:bordercolor=black:x=(w-tw)/2:y=h*0.80-64")
+                       f":borderw=4:bordercolor=black:x=(w-tw)/2:y=h*{hauteur_texte}-64")
     if p.get("titre"):
         fichier = _texte(tmp, f"titre{n}.txt", p["titre"])
         filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=0xE8452C:fontsize=120"
@@ -108,7 +115,8 @@ def plan(p: dict, n: int, tmp: Path) -> Path:
     graphe = ";".join(melange) + f";{entrees}amix=inputs={len(melange)}:normalize=0,aresample=48000[a]"
 
     sortie = tmp / f"plan{n:02d}.mp4"
-    ffmpeg("-loop", "1", "-i", str(image), *sons, "-filter_complex", graphe, "-map", "0:v", "-map", "[a]",
+    source = ["-i", str(video)] if video else ["-loop", "1", "-i", str(image)]
+    ffmpeg(*source, *sons, "-filter_complex", graphe, "-map", "0:v", "-map", "[a]",
            "-vf", ",".join(filtres), "-t", f"{total:.3f}", "-r", str(IPS), "-c:v", "libx264", "-crf", "20",
            "-c:a", "aac", "-b:a", "192k", "-ac", "1", str(sortie))
     return sortie

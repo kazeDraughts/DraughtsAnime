@@ -125,3 +125,16 @@ l'autre.
 - **Une image de référence de décor transmet aussi son arrière-plan.** Quand la caméra change de
   sens (contrechamp), ne pas la donner : décrire le mur qu'on doit voir, et préciser où est la
   caméra (« à la place du maître », « par-dessus l'épaule d'Armand »).
+
+## Contrôle systématique (25 octobre 2026, suite)
+
+En appliquant la règle du damier à tous les plans de l'épisode 1, trois autres plans étaient faux :
+- **Plan 10 (damier mental) :** des pions noirs sur les cases claires. Le plan est désormais
+  **calculé et animé** par le moteur du damier mental : on y voit le vrai début de la combinaison.
+- **Plan 4 :** le damier sous le bras d'Armand avait des pions rouges. On montre maintenant le dos
+  en bois du damier (plus vraisemblable : on ne porte pas un damier garni de pions).
+- **Plans 2 et 14 (l'affiche) :** le sol de l'affiche est refait avec le vrai damier en position de
+  départ ; on garde le ciel, le logo et le visage d'Armand.
+
+**Règle de production :** tout damier net à l'image vient du moteur (diagramme, damier mural,
+damier mental). L'IA dessine les personnages, les décors et le ciel.

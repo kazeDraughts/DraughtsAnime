@@ -58,6 +58,13 @@ du verre.
 C'est un vrai ressenti de joueur, pas de la magie : *« voir les pions bouger tout seuls dans sa
 tête »*.
 
+**Comment on le fabrique :** [outils/damier_mental.py](../outils/damier_mental.py) dessine le damier
+infini en perspective **à partir d'une position exacte**. Le vrai 10×10 est entouré d'un liseré
+lumineux, et les pions ne sont que sur les cases foncées. Le moteur anime les coups (glissement,
+saut de prise avec ombre et arc, éclair, pion pris qui disparaît). Le ciel est peint
+([visuels/decors/ciel-etoile.jpg](../visuels/decors/ciel-etoile.jpg)) et les personnages sont
+détourés ([visuels/personnages/](../visuels/personnages/)).
+
 ## La pendule
 
 C'est le « méchant » récurrent. Le tic-tac sert de bande-son du suspense. Le plan signature : un gros

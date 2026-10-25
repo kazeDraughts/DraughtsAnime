@@ -10,6 +10,12 @@ from __future__ import annotations
 from damier import BLANC, NOIR, Position, coups_legaux, jouer, materiel, trouver_coup
 
 POSITIONS = {
+    "depart": {
+        "titre": "Position de départ",
+        "episodes": "Génériques, carton-titre",
+        "fen": "W:W" + ",".join(str(c) for c in range(31, 51)) + ":B" + ",".join(str(c) for c in range(1, 21)),
+        "solution": [],
+    },
     "s01e01": {
         "titre": "Les blancs jouent et gagnent",
         "episodes": "S01E01 (le problème au tableau), S01E02 (la solution de Léo)",
