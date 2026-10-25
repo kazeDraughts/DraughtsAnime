@@ -53,8 +53,26 @@ Solution dans l'épisode 2 ! »* Le problème au tableau devient un jeu pour les
 | r12 | Léo | « Je… je crois que je vois. » |
 | r13 | Narrateur | « Qu'a vu le petit Léo ? Pourquoi donner un pion pour gagner ? Ne manquez pas le prochain épisode : *Les pions qui bougent tout seuls* ! » |
 
-## Les images à produire
+## Les images
 
-- Générées par l'IA, avec les références des personnages : plans 1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13.
-- **Dessinées par programme (exactes) :** plans 7 et 14, et les pions qui bougent au plan 10
-  (incrustés dans le damier mental).
+Animatique complète (images, sous-titres, voix déjà enregistrées) :
+[s01e01-animatique.json](s01e01-animatique.json), à monter avec `python3 outils/animatique.py`.
+
+| Plan | Image | Origine |
+|---|---|---|
+| 1 | [p01-clac.jpg](../visuels/s01e01/p01-clac.jpg) | IA |
+| 2 | [0-affiche.jpg](../visuels/concepts/0-affiche.jpg) + titre | IA |
+| 3 | [p03-ennui.jpg](../visuels/s01e01/p03-ennui.jpg) | IA, références Léo + classe |
+| 4 | [p04-porte.jpg](../visuels/s01e01/p04-porte.jpg) | IA, références Armand + classe |
+| 5 | [p05a-baillement.jpg](../visuels/s01e01/p05a-baillement.jpg), [p05b-lunettes.jpg](../visuels/s01e01/p05b-lunettes.jpg) | IA |
+| 6 | [p06-mains.jpg](../visuels/s01e01/p06-mains.jpg) | IA, régénérée puis recadrée (des pions étaient sur des cases claires) |
+| 7 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
+| 8 | [p08a-eleves.jpg](../visuels/s01e01/p08a-eleves.jpg) | IA + **damier mural exact incrusté** |
+| 8 | [p08b-horloge.jpg](../visuels/s01e01/p08b-horloge.jpg) | IA, pancarte en japonais effacée |
+| 9 | [p09-oeil.jpg](../visuels/s01e01/p09-oeil.jpg) | IA |
+| 10 | [p10-damier-mental.jpg](../visuels/s01e01/p10-damier-mental.jpg) | IA (plan d'ambiance) |
+| 11 | [p11-sueur.jpg](../visuels/s01e01/p11-sueur.jpg) | IA |
+| 12-13 | [p12-main-levee.jpg](../visuels/s01e01/p12-main-levee.jpg) | IA + **damier mural exact incrusté** ; image figée sépia-rouge au montage |
+| 14 | [plateau.png](../visuels/positions/s01e01/plateau.png) | **Programme (exact)** |
+
+Les images brutes de l'IA sont gardées dans [visuels/s01e01/brut/](../visuels/s01e01/brut/).

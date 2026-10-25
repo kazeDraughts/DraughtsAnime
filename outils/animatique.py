@@ -16,6 +16,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from PIL import ImageFont
+
 RACINE = Path(__file__).resolve().parent.parent
 LARGEUR, HAUTEUR, IPS = 1080, 1920, 25
 POLICE = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -38,6 +40,16 @@ def _texte(dossier: Path, nom: str, contenu: str) -> str:
     return str(chemin).replace(":", r"\:")
 
 
+def _taille_ajustee(texte: str, taille: int, marge: int = 70) -> int:
+    """Réduit la taille de police jusqu'à ce que la ligne la plus longue tienne dans l'image."""
+    while taille > 24:
+        police = ImageFont.truetype(POLICE, taille)
+        if max(police.getlength(ligne) for ligne in texte.split("\n")) <= LARGEUR - 2 * marge:
+            break
+        taille -= 2
+    return taille
+
+
 def plan(p: dict, n: int, tmp: Path) -> Path:
     image = RACINE / p["image"]
     avant, apres = p.get("avant", 0.3), p.get("apres", 0.4)
@@ -49,21 +61,25 @@ def plan(p: dict, n: int, tmp: Path) -> Path:
     filtres = [f"scale={LARGEUR * 2}:{HAUTEUR * 2}:force_original_aspect_ratio=increase",
                f"crop={LARGEUR * 2}:{HAUTEUR * 2}"]
     if p.get("fond"):
-        filtres = [f"scale={LARGEUR * 2 - 120}:-1",
-                   f"pad={LARGEUR * 2}:{HAUTEUR * 2}:(ow-iw)/2:(oh-ih)/2-240:color={p['fond']}"]
+        # Un diagramme sur fond uni : assez petit pour qu'aucun zoom ne rogne ses bords.
+        filtres = [f"scale={int(LARGEUR * 2 * 0.84)}:-1",
+                   f"pad={LARGEUR * 2}:{HAUTEUR * 2}:(ow-iw)/2:(oh-ih)/2-200:color={p['fond']}"]
     if p.get("effet") == "fige":
         filtres += [f"scale={LARGEUR}:{HAUTEUR}", SEPIA_ROUGE, "noise=alls=12:allf=t"]
     else:
         vitesse = p.get("zoom", 0.0007)
-        filtres += [f"zoompan=z='min(zoom+{vitesse},1.15)':d={images}:x='iw/2-(iw/zoom/2)'"
+        plafond = 1.04 if p.get("fond") else 1.15
+        filtres += [f"zoompan=z='min(zoom+{vitesse},{plafond})':d={images}:x='iw/2-(iw/zoom/2)'"
                     f":y='ih/2-(ih/zoom/2)':s={LARGEUR}x{HAUTEUR}:fps={IPS}"]
     if p.get("sous_titre"):
         fichier = _texte(tmp, f"st{n}.txt", p["sous_titre"])
-        filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=white:fontsize=56"
+        corps = _taille_ajustee(p["sous_titre"], 56)
+        filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=white:fontsize={corps}"
                        f":borderw=5:bordercolor=black:x=(w-tw)/2:y=h*0.80:line_spacing=12:text_align=C")
     if p.get("personnage"):
         fichier = _texte(tmp, f"pers{n}.txt", p["personnage"])
-        filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=0xFFD23F:fontsize=40"
+        corps = _taille_ajustee(p["personnage"], 40)
+        filtres.append(f"drawtext=fontfile={POLICE}:textfile='{fichier}':fontcolor=0xFFD23F:fontsize={corps}"
                        f":borderw=4:bordercolor=black:x=(w-tw)/2:y=h*0.80-64")
     if p.get("titre"):
         fichier = _texte(tmp, f"titre{n}.txt", p["titre"])

@@ -90,3 +90,19 @@ Huit images générées avec le prompt de base (modèle GPT Image 2.5, qualité 
 
 **Les positions exactes** sont dessinées par [outils/dessiner.py](../outils/dessiner.py), comme
 [celle de l'épisode 1](../visuels/positions/s01e01/).
+
+## Images du pilote (25 octobre 2026)
+
+13 images générées (12 plans + 1 régénération), avec les dessins validés de Léo, d'Armand et de la
+classe passés en **images de référence** : les visages et les tenues restent cohérents d'un plan à
+l'autre.
+
+**Défauts trouvés et corrigés :**
+- Le damier mural de la classe recopiait les lettres d'échecs (A–J) de la référence. Il est remplacé
+  par le vrai damier, incrusté en perspective par [outils/incruster.py](../outils/incruster.py), avec
+  des cases carrées et l'énoncé « Les blancs jouent et gagnent » sous le damier.
+- Une pancarte en japonais sur le mur (plan de l'horloge) : effacée.
+- Des pions sur les cases claires (plan des mains) : plan régénéré en plus serré puis recadré.
+
+**Leçon :** plus un damier est grand et lisible à l'image, plus il faut l'incruster par programme.
+Les gros plans sur une seule case passent mieux.

@@ -68,8 +68,9 @@ est public. Elles restent sur la machine.
 - [x] Test des voix (3 répliques) et première animatique de 18 secondes
 - [x] Choix des voix : Léo doublé par la compagne de l'auteur, voix naturelle
 - [ ] Choix du titre
-- [ ] Fiches personnages verrouillées (visuels de référence)
-- [ ] Pilote : épisode 1 (images, voix, montage)
+- [x] Visuels de référence de Léo, Armand et la classe (utilisés pour le pilote)
+- [x] Pilote : les 12 images de l'épisode 1, corrigées, et l'animatique complète (1 min 25)
+- [ ] Pilote : enregistrer les 10 répliques manquantes, musique, montage final
 - [ ] Production par lots de 5 épisodes
 
 ## Dédicace

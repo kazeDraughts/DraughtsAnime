@@ -52,6 +52,10 @@ sont fondus en un seul personnage. Le seul nom réel de la série apparaît dans
 ## Madame Delcourt, l'institutrice
 
 - Institutrice de CM2 de Léo, épouse d'Armand. Douce mais ferme sur les devoirs.
+- **Silhouette :** environ 60 ans, cheveux gris en chignon, lunettes retenues par une chaînette, gilet
+  bordeaux, jupe longue.
+- **Voix :** une voix adulte et posée, bien distincte de celle de Léo (elle parle juste avant lui
+  dans l'épisode 1).
 
 ## Nathalie Vermeulen, la maman
 
