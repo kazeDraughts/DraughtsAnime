@@ -66,7 +66,8 @@ est public. Elles restent sur la machine.
 - [x] Découpage plan par plan de l'épisode 1 (brouillon)
 - [x] Validation des grandes lignes par l'auteur (revanche de fiction, passé d'Armand, noms)
 - [x] Test des voix (3 répliques) et première animatique de 18 secondes
-- [ ] Choix de la méthode de voix (à l'oreille) et du titre
+- [x] Choix des voix : Léo doublé par la compagne de l'auteur, voix naturelle
+- [ ] Choix du titre
 - [ ] Fiches personnages verrouillées (visuels de référence)
 - [ ] Pilote : épisode 1 (images, voix, montage)
 - [ ] Production par lots de 5 épisodes

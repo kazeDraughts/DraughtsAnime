@@ -52,7 +52,8 @@ C'est l'autre leçon des essais précédents : les voix déçoivent. Le plan :
 
 ### Option recommandée : des voix humaines
 
-- **L'auteur et sa compagne enregistrent les dialogues.** Pourquoi pas aussi des amis du club pour des
+- **L'auteur et sa compagne enregistrent les dialogues.** Distribution actuelle : **Léo = la compagne
+  de l'auteur** (voix naturelle) ; **Monsieur Armand et le narrateur = l'auteur**. Pourquoi pas aussi des amis du club pour des
   apparitions : la « petite famille » du damier, jusque dans les voix.
 - **Pour les voix d'enfants**, on garde votre jeu d'acteur (l'émotion, le rythme) et on transforme
   seulement le timbre avec un changeur de voix IA. **À tester sur 3 répliques avant de décider.**
@@ -75,8 +76,12 @@ enregistrer au téléphone.
 | IA Higgsfield, voix « Miles » | 181 Hz | Abîmée (« Les **thèmes** », « jeu **du** vieux ») | 1 crédit |
 | IA Higgsfield, voix « Cody » | — | La conversion a échoué | — |
 
-**Conclusion provisoire :** la version locale garde le jeu d'acteur et la compréhension. La voix IA
-anglophone déforme le français. **Avis de l'auteur à l'oreille : en attente.**
+**Avis de l'auteur à l'oreille : aucune des voix transformées ne convient.**
+
+**Décision : Léo est doublé par la compagne de l'auteur, avec sa voix naturelle, sans transformation.**
+Premier test : voix vers 210 Hz, très peu de bruit de fond (−63 dB), parfaitement compréhensible.
+Seul traitement : couper les bruits avant et après, filtre passe-haut à 80 Hz, normalisation à
+−16 LUFS. C'est la tradition des animes, où les jeunes garçons sont souvent doublés par des femmes.
 
 **L'autre piste, la plus authentique :** dans les animes, les jeunes garçons sont très souvent doublés
 par des femmes (Son Goku enfant, au Japon, par exemple). La compagne de l'auteur pourrait jouer Léo
