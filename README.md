@@ -21,7 +21,7 @@ inspiré de l'histoire vraie d'un joueur du Nord de la France.
 | [episodes/](episodes/) | Les scénarios découpés plan par plan (le pilote : épisode 1) |
 | [visuels/concepts/](visuels/concepts/) | Les premières images de style |
 | [visuels/positions/](visuels/positions/) | Les diagrammes exacts des positions (PNG + GIF animé) |
-| [outils/](outils/) | Le moteur de règles et le dessin des positions |
+| [outils/](outils/) | Le moteur de règles, le dessin des positions et le montage des animatiques |
 
 ## Les outils de damier
 
@@ -36,6 +36,18 @@ python3 dessiner.py s01e01  # dessine une position et sa solution
 Pour ajouter une position, il suffit d'écrire son FEN et sa solution dans `outils/positions.py`. Le
 script refuse toute position illégale ou toute solution où un coup annoncé comme « forcé » ne l'est
 pas.
+
+## L'animatique
+
+Il faut aussi `ffmpeg`.
+
+```bash
+python3 outils/animatique.py episodes/s01e01-test-voix.json   # → montages/s01e01-test-voix.mp4
+```
+
+Un fichier JSON décrit les plans : image, voix, sous-titre, zoom, tic-tac, image figée « À suivre ».
+**Les voix (`audio/`) et les vidéos (`montages/`) ne sont jamais envoyées sur GitHub**, car le dépôt
+est public. Elles restent sur la machine.
 
 ## La méthode
 
@@ -52,7 +64,9 @@ pas.
 - [x] Premières images de style (8 essais)
 - [x] Moteur de règles et diagrammes exacts, avec la position de l'épisode 1 vérifiée
 - [x] Découpage plan par plan de l'épisode 1 (brouillon)
-- [ ] Validation de la bible par l'auteur
+- [x] Validation des grandes lignes par l'auteur (revanche de fiction, passé d'Armand, noms)
+- [x] Test des voix (3 répliques) et première animatique de 18 secondes
+- [ ] Choix de la méthode de voix (à l'oreille) et du titre
 - [ ] Fiches personnages verrouillées (visuels de référence)
 - [ ] Pilote : épisode 1 (images, voix, montage)
 - [ ] Production par lots de 5 épisodes

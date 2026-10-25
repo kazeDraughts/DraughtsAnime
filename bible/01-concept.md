@@ -1,5 +1,19 @@
 # 01 · Concept
 
+## Le titre (à décider)
+
+Titre de travail : **« Kaze, le vent du damier »**. L'auteur hésite. Les pistes :
+
+| Titre | Pour | Contre |
+|---|---|---|
+| Kaze, le vent du damier | Original, lié au surnom du héros | « Kaze » ne dit rien aux enfants au départ |
+| Rafle ! | Court, un vrai mot des dames, sonne comme un cri d'anime | Le mot est peu connu des non-joueurs |
+| Léo et le Damier Infini | Le moule « Olive et Tom », clair pour un enfant | Plus long |
+| Les Champions du Damier | Très « titre français des années 80 » | Plus banal |
+
+**Méthode proposée :** montrer l'affiche avec 3 titres à des enfants du club et les laisser voter.
+C'est la cible qui choisit.
+
 ## Le pitch en une phrase
 
 Léo, 10 ans, trouve que les dames sont « un jeu de vieux », jusqu'au jour où un homme entre dans sa

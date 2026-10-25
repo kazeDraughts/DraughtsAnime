@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# Voix enregistrées et vidéos montées : jamais dans le dépôt public
+audio/
+montages/

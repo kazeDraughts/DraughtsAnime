@@ -145,7 +145,9 @@ initiales : J. R.
 ## Arc 4 · L'été du carnet (épisodes 24 à 29)
 
 **24. J. R.**
-Armand raconte : en 1976, en finale régionale, contre son ami Joseph Royer, il a perdu dans cette
+Flash-back sous le soleil de Perpignan : le jeune Armand joue aux dames en terrasse. Puis il monte
+dans le Nord, sous la pluie, et tombe sur le champion local, Joseph Royer : « le Catalan contre le
+Ch'ti ». Ils deviennent amis. En 1976, en finale régionale, Armand perd contre lui dans cette
 position. Depuis, les deux hommes ne se parlent plus, et Armand cherche la solution depuis 30 ans.
 ⏸ « Je crois qu'il n'y a pas de solution. Mais toi, tu vois des choses que je ne vois plus. »
 

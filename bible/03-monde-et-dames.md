@@ -12,7 +12,8 @@ Les vrais noms de villes sont remplacés par des anagrammes. Les joueurs les rec
 
 | Dans la série | Rôle | Statut |
 |---|---|---|
-| **Wattresol** | La ville de Léo, son école et son club | Anagramme de la ville du club. **À confirmer** par l'auteur (la dictée a pu déformer le nom) |
+| **Wattresol** | La ville de Léo, son école et son club | Anagramme de la ville du club (confirmé) |
+| Perpignan | La ville d'origine de Monsieur Armand, évoquée dans les souvenirs | Nom réel gardé : c'est une grande ville, et elle n'est pas un lieu de l'action |
 | **Leraux** | Le club rival de la Tenaille | Anagramme de la ville du club rival |
 | **Prathenay** | Ville du Championnat de France des jeunes, pendant le festival des jeux de société | Anagramme |
 | La Pologne, la Turquie | Championnats du monde jeunes (saison 3) | Les pays gardent leur vrai nom |
@@ -38,6 +39,8 @@ du verre.
 - **Dorian (la Tenaille) :** des murs violets qui se referment des deux côtés.
 - **Kévin (le Mur) :** une muraille de pierre qui s'élève à l'infini.
 - **Le Grand Maître :** un ciel doré, immense et calme.
+- **Monsieur Armand :** le soleil de Perpignan, la mer au loin, un damier posé en terrasse. Dans ses
+  souvenirs, il fait toujours beau.
 
 C'est un vrai ressenti de joueur, pas de la magie : *« voir les pions bouger tout seuls dans sa
 tête »*.

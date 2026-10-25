@@ -62,6 +62,30 @@ C'est l'autre leçon des essais précédents : les voix déçoivent. Le plan :
     quand un homme est entré dans ma classe avec un damier sous le bras… »*), ce qui donne beaucoup
     d'émotion et boucle avec le dernier épisode.
 
+### Test du 25 octobre 2026 (3 répliques de l'épisode 1)
+
+Prises de l'auteur au téléphone : propres, sans saturation, bruit de fond vers −55 dB. On peut donc
+enregistrer au téléphone.
+
+| Version de Léo | Hauteur | Compréhension (transcription auto) | Coût |
+|---|---|---|---|
+| Voix d'origine | 116 Hz | Parfaite | — |
+| **Locale** (hauteur ~270 Hz, timbre ×1,15) | 270 Hz | **Parfaite** | Gratuit |
+| Locale poussée (timbre ×1,25) | 267 Hz | Abîmée (« J-J-J'ai crois ») | Gratuit |
+| IA Higgsfield, voix « Miles » | 181 Hz | Abîmée (« Les **thèmes** », « jeu **du** vieux ») | 1 crédit |
+| IA Higgsfield, voix « Cody » | — | La conversion a échoué | — |
+
+**Conclusion provisoire :** la version locale garde le jeu d'acteur et la compréhension. La voix IA
+anglophone déforme le français. **Avis de l'auteur à l'oreille : en attente.**
+
+**L'autre piste, la plus authentique :** dans les animes, les jeunes garçons sont très souvent doublés
+par des femmes (Son Goku enfant, au Japon, par exemple). La compagne de l'auteur pourrait jouer Léo
+avec sa voix naturelle, sans aucune transformation, et l'auteur jouerait Armand (avec l'accent du
+Sud) et le narrateur.
+
+**Réglage de la transformation locale :** Praat, fonction « Change gender » : hauteur médiane 270 Hz,
+formants ×1,15, amplitude de hauteur ×1,0 (×1,3 pour une réplique chuchotée).
+
 ### Comment bien enregistrer avec un téléphone
 
 - Choisir une pièce pleine de tissus (une chambre, ou face à une penderie ouverte). Éviter la cuisine

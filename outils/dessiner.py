@@ -123,6 +123,8 @@ def exporter(nom: str) -> Path:
 
     for n, image in enumerate(images):
         image.save(dossier / f"{n:02d}.png")
+    # Version sans légende, pour l'incruster dans les vidéos (les sous-titres prennent sa place).
+    dessiner(etapes[0]).save(dossier / "plateau.png")
     durees = [2600] + [1700, 1200] * len(fiche["solution"])
     durees[-1] = 3000
     images[0].save(dossier / f"{nom}.gif", save_all=True, append_images=images[1:], duration=durees, loop=0)

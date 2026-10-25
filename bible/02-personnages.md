@@ -37,6 +37,11 @@ sont fondus en un seul personnage. Le seul nom réel de la série apparaît dans
   en tweed, un grand damier de démonstration toujours sous le bras.
 - **Qui il est :** le mari de Madame Delcourt, l'institutrice de CM2. Il vient bénévolement donner des
   cours de dames à l'école, puis entraîne les jeunes au club.
+- **Ses origines :** il vient de **Perpignan**, comme le vrai mentor de l'auteur. Il est monté dans le
+  Nord jeune et a gardé l'**accent du Sud**, qui chante au milieu des « hein » du Nord. Ça fait un
+  contraste comique et tendre : le soleil catalan sous le ciel gris de Wattresol. Il parle parfois du
+  soleil, de la mer, des parties en terrasse.
+- **Sa voix :** chaleureuse, avec l'accent du Sud (à jouer à l'enregistrement).
 - **Caractère :** bienveillant, patient, malicieux. Il demande toujours *« Et l'école, ça va ? »*
   avant de parler dames.
 - **Sa phrase :** *« Avant de jouer ton coup, joue le sien. »*
@@ -97,8 +102,9 @@ sont fondus en un seul personnage. Le seul nom réel de la série apparaît dans
 
 ## Joseph Royer, le vieux rival
 
-- L'ami-rival de jeunesse de Monsieur Armand, entraîneur à Leraux et grand-père de Kévin. Les deux
-  hommes ne se parlent plus depuis 30 ans. Le carnet va les réunir.
+- Le champion local qu'Armand a trouvé sur sa route en arrivant du Sud : « le Catalan contre le
+  Ch'ti ». Ils sont devenus amis, puis rivaux. Il est entraîneur à Leraux et grand-père de Kévin. Les
+  deux hommes ne se parlent plus depuis 30 ans. Le carnet va les réunir.
 
 ## Fabrice, l'organisateur infatigable
 

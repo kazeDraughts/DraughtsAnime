@@ -1,0 +1,38 @@
+{
+  "nom": "s01e01-test-voix",
+  "plans": [
+    {
+      "image": "visuels/concepts/1-leo.jpg",
+      "voix": "audio/s01e01/r04_leo.wav",
+      "personnage": "LÉO",
+      "sous_titre": "Les dames ?!\nC'est un jeu de vieux !",
+      "zoom": 0.0009
+    },
+    {
+      "image": "visuels/positions/s01e01/plateau.png",
+      "fond": "0x1B2A4A",
+      "voix": "audio/s01e01/r06_armand.wav",
+      "personnage": "MONSIEUR ARMAND",
+      "sous_titre": "Les blancs jouent… et gagnent.\nQui trouve ?",
+      "tictac": 0.12,
+      "zoom": 0.0005
+    },
+    {
+      "image": "visuels/concepts/5-classe.jpg",
+      "voix": "audio/s01e01/r12_leo.wav",
+      "personnage": "LÉO",
+      "sous_titre": "Je… je crois que je vois.",
+      "tictac": 0.2,
+      "zoom": 0.0012,
+      "avant": 0.2,
+      "apres": 0.3
+    },
+    {
+      "image": "visuels/concepts/5-classe.jpg",
+      "effet": "fige",
+      "titre": "À SUIVRE…",
+      "accord": true,
+      "duree": 3.0
+    }
+  ]
+}
