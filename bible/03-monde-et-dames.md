@@ -21,7 +21,18 @@ Les vrais noms de villes sont remplacés par des anagrammes. Les joueurs les rec
 ### Les décors récurrents
 
 - **La classe de CM2** de Madame Delcourt : tableau noir, cartes de France, grandes fenêtres, lumière
-  du matin.
+  du matin. **Le plan de la classe**, à respecter dans chaque plan :
+
+  | Mur (vu depuis les pupitres des élèves) | Ce qu'on y voit |
+  |---|---|
+  | **Devant** | Le tableau noir, le damier mural, la carte de France, la porte (à gauche du tableau). Le maître et Armand s'y tiennent |
+  | **Droite** | Les grandes fenêtres, les maisons en briques et le clocher (Léo est assis près d'une fenêtre) |
+  | **Fond** | Les porte-manteaux avec les manteaux et les cartables, une armoire, des étagères, les dessins d'enfants |
+  | **Gauche** | Un mur avec un panneau d'affichage et l'horloge |
+
+  **La règle :** si on voit le visage des élèves, la caméra est devant, à la place du maître. On voit
+  alors le mur du fond, et les fenêtres sont à gauche de l'image. Le tableau et le damier ne sont
+  visibles que dans le dos des élèves.
 - **Le club de Wattresol :** une salle municipale, des tables alignées avec damiers et pendules, une
   cafetière, les coupes sur une étagère, une banderole « Club de dames de Wattresol ».
 - **La cuisine des Vermeulen :** la table en formica où se jouent les duels entre frères.

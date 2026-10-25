@@ -34,11 +34,9 @@ MURAL = {
 }
 
 # image brute (générée par l'IA), image corrigée, position, coins du damier (haut-gauche, haut-droit, bas-droit, bas-gauche)
-INCRUSTATIONS = [
-    ("visuels/s01e01/brut/p08a-eleves.jpg", "visuels/s01e01/p08a-eleves.jpg", "s01e01",
-     [(450, 122), (738, 99), (738, 511), (452, 515)]),
-    ("visuels/s01e01/brut/p12-main-levee.jpg", "visuels/s01e01/p12-main-levee.jpg", "s01e01",
-     [(480, 122), (751, 96), (751, 478), (487, 488)]),
+INCRUSTATIONS: list = [
+    # Exemple : ("visuels/s01e01/brut/plan.jpg", "visuels/s01e01/plan.jpg", "s01e01",
+    #            [(450, 122), (738, 99), (738, 511), (452, 515)]),
 ]
 
 

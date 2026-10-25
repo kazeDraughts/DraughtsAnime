@@ -98,11 +98,21 @@ classe passés en **images de référence** : les visages et les tenues restent 
 l'autre.
 
 **Défauts trouvés et corrigés :**
-- Le damier mural de la classe recopiait les lettres d'échecs (A–J) de la référence. Il est remplacé
-  par le vrai damier, incrusté en perspective par [outils/incruster.py](../outils/incruster.py), avec
-  des cases carrées et l'énoncé « Les blancs jouent et gagnent » sous le damier.
+- Le damier mural de la classe recopiait les lettres d'échecs (A–J) de la référence. Un premier
+  correctif l'a remplacé par le vrai damier, incrusté en perspective par
+  [outils/incruster.py](../outils/incruster.py) (l'outil reste disponible).
+- **Erreur de mise en scène, repérée par l'auteur** (plans 8 et 12) : on voyait le visage des élèves
+  ET le tableau derrière eux, comme si le maître était au fond de la classe. Cause : l'image de
+  référence de la classe (prise depuis les pupitres) a été donnée pour des plans pris dans l'autre
+  sens, et l'IA a recopié son arrière-plan. Les deux plans ont été refaits sans cette référence, en
+  décrivant le mur du fond. Voir le **plan de la classe** dans
+  [03-monde-et-dames.md](03-monde-et-dames.md).
 - Une pancarte en japonais sur le mur (plan de l'horloge) : effacée.
 - Des pions sur les cases claires (plan des mains) : plan régénéré en plus serré puis recadré.
 
-**Leçon :** plus un damier est grand et lisible à l'image, plus il faut l'incruster par programme.
-Les gros plans sur une seule case passent mieux.
+**Leçons :**
+- Plus un damier est grand et lisible à l'image, plus il faut l'incruster par programme. Les gros
+  plans sur une seule case passent mieux.
+- **Une image de référence de décor transmet aussi son arrière-plan.** Quand la caméra change de
+  sens (contrechamp), ne pas la donner : décrire le mur qu'on doit voir, et préciser où est la
+  caméra (« à la place du maître », « par-dessus l'épaule d'Armand »).
